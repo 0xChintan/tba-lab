@@ -1,0 +1,32 @@
+{
+  "name": "tba-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Hands-on lab for the Tokenbound SDK — every TokenboundClient method as a UI panel, on Sepolia + Base Sepolia, in both viem and ethers v6.",
+  "license": "MIT",
+  "keywords": [
+    "erc-6551",
+    "tokenbound",
+    "nft",
+    "ethereum",
+    "viem",
+    "ethers",
+    "wagmi",
+    "nextjs",
+    "foundry",
+    "sepolia",
+    "base"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "lint": "pnpm --filter web lint",
+    "typecheck": "pnpm --filter web exec tsc --noEmit",
+    "test": "pnpm contracts:test",
+    "contracts:build": "forge build --root contracts",
+    "contracts:test": "forge test --root contracts -vv",
+    "contracts:fmt": "forge fmt --root contracts",
+    "clean": "pnpm -r exec rm -rf .next dist .turbo && rm -rf node_modules"
+  },
+  "packageManager": "pnpm@11.0.9"
+}

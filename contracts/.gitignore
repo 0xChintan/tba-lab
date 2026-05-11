@@ -1,0 +1,19 @@
+# Compiler files
+cache/
+out/
+
+# Commonly ignored directories
+.logs/
+.ignore/
+
+# Broadcast logs — ignored so contributors don't leak their deployer addresses.
+# Re-deploy locally if you need a fresh broadcast/ folder.
+/broadcast/
+
+# Docs
+docs/
+
+# Dotenv file
+.env
+.env.*
+!.env.example

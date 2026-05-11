@@ -1,0 +1,19 @@
+node_modules/
+.next/
+out/
+dist/
+.env
+.env.local
+.env.*.local
+.DS_Store
+*.log
+
+# Foundry
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+
+# IDE
+.idea/
+.vscode/
+!.vscode/extensions.json
